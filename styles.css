@@ -1,0 +1,80 @@
+/* General body styling */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+/* Header styling */
+header {
+  background-color: steelblue;
+  width: 100%;
+  padding: 10px;
+  text-align: center;
+}
+
+/* Navigation styling */
+nav a {
+  color: white;
+  margin: 0 15px;
+  text-decoration: none;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+/* Main section styling */
+main {
+  max-width: 900px;
+  margin: 20px;
+  text-align: center;
+}
+
+/* Profile image styling for curved box */
+.fit-picture {
+  border-radius: 50%; /* Makes the image round */
+  border: 5px solid #fff; /* White border around the image */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* Adds a shadow for a lifted effect */
+}
+
+/* Aside section styling */
+aside {
+  max-width: 900px;
+  margin: 20px;
+  padding: 15px;
+  background-color: #f4f4f4;
+  border-radius: 8px;
+}
+
+/* Layout for both the main content and aside section */
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.container > main {
+  flex: 1;
+  margin-right: 20px;
+}
+
+.container > aside {
+  flex: 0 0 300px;
+  margin-left: 20px;
+  text-align: left;
+}
+
+/* Footer styling */
+footer {
+  background-color: steelblue;
+  width: 100%;
+  text-align: center;
+  padding: 10px;
+  color: white;
+}
