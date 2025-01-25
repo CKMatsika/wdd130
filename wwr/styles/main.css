@@ -1,0 +1,175 @@
+/* Define the color scheme using CSS variables */
+:root {
+    --primary-color: #D9FFF5;
+    --secondary-color: #B9F5D8;
+    --accent1-color: #6B8F71;
+    --accent2-color: #AAD2BA;
+    --text-color: #1d1e18; /* Dark color for text */
+    --heading-font: 'Merriweather', sans-serif;
+    --text-font: 'Roboto', sans-serif;
+}
+
+/* Universal Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: var(--text-font);
+}
+
+/* Body styling */
+body {
+    background-color: var(--secondary-color);
+    color: var(--text-color);
+    width: 100%;
+    max-width: 1200px; /* Limits the width for easier design */
+    margin: 0 auto; /* Centers the page content */
+}
+
+/* Header Styles */
+header {
+    background-color: var(--primary-color);
+    padding: 20px;
+    text-align: center;
+}
+
+/* Logo in the header */
+header img {
+    max-width: 200px;
+    height: auto;
+}
+
+/* Navigation Styles */
+nav {
+    margin-top: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: var(--accent1-color);
+    margin: 0 15px;
+    font-weight: bold;
+    font-family: var(--heading-font);
+}
+
+nav a:hover {
+    color: var(--accent2-color);
+}
+
+/* Hero Section */
+.hero {
+    position: relative; /* Ensure absolute children are positioned relative to this container */
+    background-color: var(--accent1-color);
+    text-align: center;
+    padding: 50px;
+}
+
+.hero img {
+    width: 100%;
+    height: auto;
+    display: block; /* Makes the image a block-level element */
+    object-fit: cover; /* Ensures the image covers the container without distortion */
+}
+
+/* Positioning the heading */
+.hero h1 {
+    position: absolute;
+    top: 30%; /* Adjust to position the heading vertically */
+    left: 50%;
+    transform: translateX(-50%); /* Centers the heading horizontally */
+    font-family: var(--heading-font);
+    font-size: 3rem;
+    color: var(--primary-color);
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5); /* Adds a subtle shadow for better readability */
+}
+
+/* Article Section */
+article {
+    position: absolute;
+    bottom: 10%; /* Position the article near the bottom */
+    left: 50%;
+    transform: translateX(-50%); /* Centers the article horizontally */
+    background-color: rgba(255, 255, 255, 0.8); /* Light background with some opacity for readability */
+    padding: 20px;
+    max-width: 500px;
+    text-align: left;
+    border-radius: 10px; /* Rounded corners */
+}
+
+article img {
+    float: right; /* Makes the image float to the right of the paragraph */
+    width: 100px; /* Set a fixed width for the image */
+    height: auto;
+    border-radius: 50%; /* Makes the image circular */
+    margin-left: 20px;
+}
+
+article p {
+    font-size: 1.2rem;
+    margin-top: 10px;
+}
+
+/* Section Styles */
+section {
+    padding: 30px 20px;
+}
+
+h2 {
+    font-family: var(--heading-font);
+    color: var(--accent1-color);
+    font-size: 2rem;
+    text-align: center;
+}
+
+p {
+    font-size: 1rem;
+    text-align: center;
+    margin-top: 10px;
+}
+
+/* Images in the Adventure Awaits Section */
+.rafting-images {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.rafting-images img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+/* Footer Styles */
+footer {
+    background-color: var(--primary-color);
+    text-align: center;
+    padding: 20px;
+}
+
+footer p {
+    font-size: 1rem;
+    margin-bottom: 10px;
+}
+
+footer a {
+    margin: 0 10px;
+}
+
+footer img {
+    width: 30px;
+    height: auto;
+    border-radius: 50%;
+}
+
+/* Remove underline from social media links (specific to social media images) */
+footer a img {
+    text-decoration: none;
+}
+
+/* Hover effect for social media icons */
+footer a:hover img {
+    opacity: 0.8;
+}
+
