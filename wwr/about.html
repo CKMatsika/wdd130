@@ -8,53 +8,84 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700;900&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="styles/styles.css"> <!-- Your stylesheet -->
+    <!-- Main Stylesheet -->
+    <link rel="stylesheet" href="styles/styles.css">
 </head>
 <body>
 
     <!-- Header Section -->
     <header>
-        <!-- Logo Image Path -->
-        <img src="images/Logo.png" alt="Whitewater Rafting Logo"> <!-- Logo -->
-        <nav>
-            <a href="index.html">Home</a>
-            <a href="about.html">About</a>
-            <a href="trips.html">Trips</a>
-            <a href="contact.html">Contact</a>
-        </nav>
+        <div class="header-container">
+            <!-- Logo -->
+            <img src="images/Logo.webp" alt="Whitewater Rafting Logo" 
+                 onerror="this.onerror=null;this.src='images/Logo.png';">
+            <nav aria-label="Main Navigation">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="trips.html">Trips</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
 
-    <!-- Main Section -->
+    <!-- Main Content Section -->
     <main>
 
         <!-- Hero Section -->
-        <div class="hero">
-            <img src="images/hero-image.png" alt="Rafting Adventure"> <!-- Updated hero image -->
+        <section class="hero">
+            <img src="images/Hero.webp" alt="Rafting Adventure" 
+                 onerror="this.onerror=null;this.src='images/Hero.png';">
             <h1>Whitewater Rafting Adventures</h1>
-        </div>
+        </section>
 
         <!-- About the Company -->
-        <article>
-            <img src="images/happy-client.png" alt="Happy Client"> <!-- Updated happy client image -->
-            <p>Welcome to Whitewater Rafting Adventures! We offer thrilling rafting experiences on some of the most exciting rivers around.</p>
+        <article aria-labelledby="about-heading">
+                <figure>
+                     <img src="images/Happy.webp" alt="Happy" 
+                 onerror="this.onerror=null;this.src='images/Happy.png';">
+            <div>
+                <h2 id="about-heading">Welcome to Whitewater Rafting Adventures!</h2>
+                <p>We offer thrilling rafting experiences on some of the most exciting rivers around.</p>
+            </div>
         </article>
 
         <!-- History Section -->
-        <section>
-            <h2>History</h2>
+        <section class="history-section" aria-labelledby="history-heading">
+            <h2 id="history-heading">Our History</h2>
             <p>Founded in 1999, Whitewater Rafting Adventures has been providing exciting rafting trips for over 20 years.</p>
         </section>
 
-        <!-- Adventure Awaits Section -->
-        <section>
-            <h2>Adventure Awaits You!</h2>
+        <!-- Adventure Section -->
+        <section class="adventure-section" aria-labelledby="adventure-heading">
+            <h2 id="adventure-heading">Adventure Awaits You!</h2>
             <div class="rafting-images">
-                <!-- Updated with Rapids images -->
-                <img src="images/Rapids 1.png" alt="Rafting Image 1">
-                <img src="images/Rapids 2.png" alt="Rafting Image 2">
-                <img src="images/Rapids 3.png" alt="Rafting Image 3">
-                <img src="images/Rapids 4.png" alt="Rafting Image 4">
-                <img src="images/Rapids 5.png" alt="Rafting Image 5">
+                <figure>
+                    <img src="images/Rapids 1.webp" alt="Los Dientes del Diablo Rapids" 
+                         onerror="this.onerror=null;this.src='images/Rapids 1.png';">
+                    <figcaption>Los Dientes del Diablo</figcaption>
+                </figure>
+                <figure>
+                    <img src="images/Rapids 2.webp" alt="Big Mallard Rapids" 
+                         onerror="this.onerror=null;this.src='images/Rapids 2.png';">
+                    <figcaption>Big Mallard</figcaption>
+                </figure>
+                <figure>
+                    <img src="images/Rapids 3.webp" alt="Half Day Adventure Rapids" 
+                         onerror="this.onerror=null;this.src='images/Rapids 3.png';">
+                    <figcaption>Half Day Adventure</figcaption>
+                </figure>
+                <figure>
+                    <img src="images/Rapids 4.webp" alt="Class V Rapids" 
+                         onerror="this.onerror=null;this.src='images/Rapids 4.png';">
+                    <figcaption>Class V Rapids</figcaption>
+                </figure>
+                <figure>
+                    <img src="images/Rapids 5.webp" alt="Whitewater Thrills Rapids" 
+                         onerror="this.onerror=null;this.src='images/Rapids 5.png';">
+                    <figcaption>Whitewater Thrills</figcaption>
+                </figure>
             </div>
         </section>
 
@@ -64,12 +95,15 @@
     <footer>
         <p>&copy; 2023 Whitewater Rafting Adventures - All Rights Reserved</p>
         <!-- Social Media Icons -->
-        <a href="#"><img src="images/facebook-icon.png" alt="Facebook"></a> <!-- Updated Facebook icon -->
-        <a href="#"><img src="images/twitter-icon.png" alt="Twitter"></a> <!-- Updated Twitter icon -->
-        <a href="#"><img src="images/instagram-icon.png" alt="Instagram"></a> <!-- Updated Instagram icon -->
+        <div class="social-icons">
+            <a href="#" aria-label="Facebook"><img src="images/Facebook.webp" alt="Facebook" 
+                             onerror="this.onerror=null;this.src='images/Facebook.png';"></a>
+            <a href="#" aria-label="Twitter"><img src="images/Twitter.webp" alt="Twitter" 
+                             onerror="this.onerror=null;this.src='images/Twitter.png';"></a>
+            <a href="#" aria-label="Instagram"><img src="images/Instagram.webp" alt="Instagram" 
+                             onerror="this.onerror=null;this.src='images/Instagram.png';"></a>
+        </div>
     </footer>
 
 </body>
 </html>
-
-
