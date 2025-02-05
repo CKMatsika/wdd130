@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Whitewater Rafting</title>
+    <meta name="description" content="Get in touch with Whitewater Rafting Adventures. Find our contact details, location, and reach out for inquiries, reservations, or feedback.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700;900&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/styles.css">
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <img src="images/Logo.webp" alt="Whitewater Rafting Logo" onerror="this.onerror=null;this.src='images/Logo.png';">
+            <nav aria-label="Main Navigation">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="trips.html">Trips</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <section class="contact-info">
+            <h1>Contact Us</h1>
+            <p>Reach out to us for inquiries, reservations, or suggestions.</p>
+            <address>
+                <p><strong>Address:</strong> 123 Rapids Street, River City, RC 45678</p>
+                <p><strong>Phone:</strong> +1 (234) 567-890</p>
+                <p><strong>Email:</strong> contact@whitewaterrafting.com</p>
+            </address>
+            <div class="map-container">
+                <iframe src="https://www.google.com/maps/embed?..." width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+        </section>
+        <section class="team">
+            <h2>Meet Our Team</h2>
+            <div class="employee-profiles">
+                <figure>
+                    <img src="images/clemence(1).webp" alt="Clemence(1) - Guide">
+                    <figcaption>Clemence - Head Guide</figcaption>
+                </figure>
+                <figure>
+                    <img src="images/tari(1).jpg" alt="tari(1) - Manager">
+                    <figcaption>Tari - Operations Manager</figcaption>
+                </figure>
+                <figure>
+                    <img src="images/rose(1).jpg" alt="rose(1) - Customer Service">
+                    <figcaption>Rose - Customer Service</figcaption>
+                </figure>
+            </div>
+        </section>
+        <section class="contact-form">
+            <h2>Send Us a Message</h2>
+            <form action="submit_form.php" method="post">
+                <label for="name">Your Name:</label>
+                <input type="text" id="name" name="name" required>
+                
+                <label for="email">Your Email:</label>
+                <input type="email" id="email" name="email" required>
+                
+                <fieldset>
+                    <legend>Purpose of Message:</legend>
+                    <label><input type="radio" name="purpose" value="General Inquiry" required> General Inquiry</label>
+                    <label><input type="radio" name="purpose" value="Reservation Question"> Reservation Question</label>
+                    <label><input type="radio" name="purpose" value="Website Suggestion"> Website Suggestion</label>
+                </fieldset>
+                
+                <label for="message">Your Message:</label>
+                <textarea id="message" name="message" required></textarea>
+                
+                <label><input type="checkbox" name="subscribe"> Please subscribe me to the monthly newsletter</label>
+                
+                <button type="submit">Send Message</button>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2023 Whitewater Rafting Adventures - All Rights Reserved</p>
+        <div class="social-icons">
+            <a href="#" aria-label="Facebook"><img src="images/Facebook.webp" alt="Facebook" onerror="this.onerror=null;this.src='images/Facebook.png';"></a>
+            <a href="#" aria-label="Twitter"><img src="images/Twitter.webp" alt="Twitter" onerror="this.onerror=null;this.src='images/Twitter.png';"></a>
+            <a href="#" aria-label="Instagram"><img src="images/Instagram.webp" alt="Instagram" onerror="this.onerror=null;this.src='images/Instagram.png';"></a>
+        </div>
+        <p><a href="wireframe_contact.png">View Contact Us Wireframe</a></p>
+    </footer>
+</body>
+</html>
+
+
