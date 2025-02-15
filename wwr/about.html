@@ -4,106 +4,240 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About Us - Whitewater Rafting</title>
-    <!-- Google Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700;900&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
-    <!-- Main Stylesheet -->
-    <link rel="stylesheet" href="styles/styles.css">
+    <style>
+        /* Base Styles */
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+        }
+
+        /* Header Styles - Using working header style */
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 20px;
+            background-color: white;
+            border-bottom: 1px solid #ccc;
+        }
+        .logo {
+            max-width: 70px;
+        }
+        nav {
+            margin-left: auto;
+        }
+        nav a {
+            margin: 0 15px;
+            text-decoration: none;
+            color: #003366;
+            font-weight: bold;
+        }
+
+        /* Hero Section */
+        .hero {
+            position: relative;
+            height: 400px;
+            overflow: hidden;
+        }
+        .hero img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        .hero h1 {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            color: white;
+            font-size: 3rem;
+            text-align: center;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+            z-index: 1;
+        }
+        .hero::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0,0,0,0.4);
+        }
+
+        /* About Section */
+        article {
+            max-width: 1200px;
+            margin: 50px auto;
+            padding: 0 20px;
+            display: flex;
+            align-items: center;
+            gap: 40px;
+        }
+        article img {
+            width: 400px;
+            height: 300px;
+            object-fit: cover;
+            border-radius: 8px;
+        }
+        article div {
+            flex: 1;
+        }
+        article h2 {
+            color: #003366;
+            font-family: 'Merriweather', serif;
+            margin-bottom: 20px;
+        }
+
+        /* History Section */
+        .history-section {
+            background-color: #f8f9fa;
+            padding: 60px 20px;
+            text-align: center;
+        }
+        .history-section h2 {
+            color: #003366;
+            font-family: 'Merriweather', serif;
+            margin-bottom: 20px;
+        }
+        .history-section p {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        /* Adventure Section */
+        .adventure-section {
+            padding: 60px 20px;
+            text-align: center;
+        }
+        .adventure-section h2 {
+            color: #003366;
+            font-family: 'Merriweather', serif;
+            margin-bottom: 40px;
+        }
+        .rafting-images {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        figure {
+            margin: 0;
+            position: relative;
+            overflow: hidden;
+            border-radius: 8px;
+        }
+        figure img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            transition: transform 0.3s;
+        }
+        figure:hover img {
+            transform: scale(1.1);
+        }
+        figcaption {
+            background: rgba(0,0,0,0.7);
+            color: white;
+            padding: 10px;
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #003366;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        .social-icons {
+            margin-top: 20px;
+        }
+        .social-icons a {
+            margin: 0 10px;
+        }
+        .social-icons img {
+            width: 30px;
+            height: 30px;
+        }
+    </style>
 </head>
 <body>
-
-    <!-- Header Section -->
+    <!-- Header -->
     <header>
-        <div class="header-container">
-            <!-- Logo -->
-            <img src="images/Logo.webp" alt="Whitewater Rafting Logo" 
-                 onerror="this.onerror=null;this.src='images/Logo.png';">
-            <nav aria-label="Main Navigation">
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="about.html">About</a></li>
-                    <li><a href="trips.html">Trips</a></li>
-                    <li><a href="contact.html">Contact</a></li>
-                </ul>
-            </nav>
-        </div>
+        <img src="images/logo.png" alt="Whitewater Rafting Logo" class="logo">
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="trips.html">Trips</a>
+            <a href="contact.html">Contact</a>
+        </nav>
     </header>
 
-    <!-- Main Content Section -->
     <main>
-
         <!-- Hero Section -->
         <section class="hero">
-            <img src="images/Hero.webp" alt="Rafting Adventure" 
-                 onerror="this.onerror=null;this.src='images/Hero.png';">
-            <h1>Whitewater Rafting Adventures</h1>
+            <img src="images/Hero.webp" alt="Rafting Adventure">
+            <h1>About Our Adventures</h1>
         </section>
 
-        <!-- About the Company -->
-        <article aria-labelledby="about-heading">
-                <figure>
-                     <img src="images/Happy.webp" alt="Happy" 
-                 onerror="this.onerror=null;this.src='images/Happy.png';">
+        <!-- About Section -->
+        <article>
+            <img src="images/Happy.webp" alt="Happy Rafters">
             <div>
-                <h2 id="about-heading">Welcome to Whitewater Rafting Adventures!</h2>
-                <p>We offer thrilling rafting experiences on some of the most exciting rivers around.</p>
+                <h2>Welcome to Whitewater Rafting Adventures!</h2>
+                <p>We offer thrilling rafting experiences on some of the most exciting rivers around. Our experienced guides ensure your safety while providing an unforgettable adventure.</p>
             </div>
         </article>
 
         <!-- History Section -->
-        <section class="history-section" aria-labelledby="history-heading">
-            <h2 id="history-heading">Our History</h2>
-            <p>Founded in 1999, Whitewater Rafting Adventures has been providing exciting rafting trips for over 20 years.</p>
+        <section class="history-section">
+            <h2>Our History</h2>
+            <p>Founded in 1999, Whitewater Rafting Adventures has been providing exciting rafting trips for over 20 years. We've grown from a small local operation to one of the most trusted names in adventure tourism.</p>
         </section>
 
         <!-- Adventure Section -->
-        <section class="adventure-section" aria-labelledby="adventure-heading">
-            <h2 id="adventure-heading">Adventure Awaits You!</h2>
+        <section class="adventure-section">
+            <h2>Adventure Awaits You!</h2>
             <div class="rafting-images">
                 <figure>
-                    <img src="images/Rapids 1.webp" alt="Los Dientes del Diablo Rapids" 
-                         onerror="this.onerror=null;this.src='images/Rapids 1.png';">
+                    <img src="images/rapids 1.png" alt="Los Dientes del Diablo Rapids">
                     <figcaption>Los Dientes del Diablo</figcaption>
                 </figure>
                 <figure>
-                    <img src="images/Rapids 2.webp" alt="Big Mallard Rapids" 
-                         onerror="this.onerror=null;this.src='images/Rapids 2.png';">
+                    <img src="images/rapids 2.png" alt="Big Mallard Rapids">
                     <figcaption>Big Mallard</figcaption>
                 </figure>
                 <figure>
-                    <img src="images/Rapids 3.webp" alt="Half Day Adventure Rapids" 
-                         onerror="this.onerror=null;this.src='images/Rapids 3.png';">
+                    <img src="images/rapids 3.png" alt="Half Day Adventure Rapids">
                     <figcaption>Half Day Adventure</figcaption>
                 </figure>
                 <figure>
-                    <img src="images/Rapids 4.webp" alt="Class V Rapids" 
-                         onerror="this.onerror=null;this.src='images/Rapids 4.png';">
+                    <img src="images/rapids 4.png" alt="Class V Rapids">
                     <figcaption>Class V Rapids</figcaption>
                 </figure>
                 <figure>
-                    <img src="images/Rapids 5.webp" alt="Whitewater Thrills Rapids" 
-                         onerror="this.onerror=null;this.src='images/Rapids 5.png';">
+                    <img src="images/rapids 5.png" alt="Whitewater Thrills Rapids">
                     <figcaption>Whitewater Thrills</figcaption>
                 </figure>
             </div>
         </section>
-
     </main>
 
-    <!-- Footer Section -->
+    <!-- Footer -->
     <footer>
         <p>&copy; 2023 Whitewater Rafting Adventures - All Rights Reserved</p>
-        <!-- Social Media Icons -->
         <div class="social-icons">
-            <a href="#" aria-label="Facebook"><img src="images/Facebook.webp" alt="Facebook" 
-                             onerror="this.onerror=null;this.src='images/Facebook.png';"></a>
-            <a href="#" aria-label="Twitter"><img src="images/Twitter.webp" alt="Twitter" 
-                             onerror="this.onerror=null;this.src='images/Twitter.png';"></a>
-            <a href="#" aria-label="Instagram"><img src="images/Instagram.webp" alt="Instagram" 
-                             onerror="this.onerror=null;this.src='images/Instagram.png';"></a>
+            <a href="#"><img src="images/Facebook.webp" alt="Facebook"></a>
+            <a href="#"><img src="images/Twitter.webp" alt="Twitter"></a>
+            <a href="#"><img src="images/Instagram.webp" alt="Instagram"></a>
         </div>
     </footer>
-
 </body>
 </html>

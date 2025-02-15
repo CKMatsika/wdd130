@@ -8,23 +8,165 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700;900&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="styles/styles.css">
+    <style>
+        /* Base Styles */
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+        }
+
+        /* Header Styles */
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 20px;
+            background-color: white;
+            border-bottom: 1px solid #ccc;
+        }
+        .logo {
+            max-width: 70px;
+        }
+        nav {
+            margin-left: auto;
+        }
+        nav a {
+            margin: 0 15px;
+            text-decoration: none;
+            color: #003366;
+            font-weight: bold;
+        }
+
+        /* Main Content Styles */
+        main {
+            padding: 20px;
+        }
+
+        /* Contact Info Section */
+        .contact-info {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+        .contact-info h1 {
+            color: #003366;
+            margin-bottom: 10px;
+        }
+        .contact-info p {
+            margin-bottom: 20px;
+        }
+        .contact-info address {
+            font-style: normal;
+            margin-bottom: 20px;
+        }
+        .map-container {
+            max-width: 100%;
+            margin: 0 auto;
+        }
+        iframe {
+            width: 100%;
+            height: 450px;
+            border: 0;
+        }
+
+        /* Team Section */
+        .team {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+        .team h2 {
+            color: #003366;
+            margin-bottom: 20px;
+        }
+        .employee-profiles {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+        figure {
+            margin: 0;
+            text-align: center;
+        }
+        figure img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            object-fit: cover;
+        }
+
+        /* Contact Form Section */
+        .contact-form {
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #f8f9fa;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        .contact-form h2 {
+            color: #003366;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+        .contact-form label {
+            display: block;
+            margin-bottom: 5px;
+        }
+        .contact-form input, .contact-form textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        .contact-form button {
+            width: 100%;
+            padding: 10px;
+            background-color: #003366;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-weight: bold;
+        }
+        .contact-form button:hover {
+            background-color: #004c99;
+        }
+
+        /* Footer Styles */
+        footer {
+            background-color: #003366;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        .social-icons {
+            margin-top: 20px;
+        }
+        .social-icons a {
+            margin: 0 10px;
+        }
+        .social-icons img {
+            width: 30px;
+            height: 30px;
+        }
+    </style>
 </head>
 <body>
     <header>
-        <div class="header-container">
-            <img src="images/Logo.webp" alt="Whitewater Rafting Logo" onerror="this.onerror=null;this.src='images/Logo.png';">
-            <nav aria-label="Main Navigation">
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="about.html">About</a></li>
-                    <li><a href="trips.html">Trips</a></li>
-                    <li><a href="contact.html">Contact</a></li>
-                </ul>
-            </nav>
-        </div>
+        <img src="images/Logo.webp" alt="Whitewater Rafting Logo" class="logo" onerror="this.onerror=null;this.src='images/Logo.png';">
+        <nav aria-label="Main Navigation">
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="trips.html">Trips</a>
+            <a href="contact.html">Contact</a>
+        </nav>
     </header>
+
     <main>
+        <!-- Contact Info Section -->
         <section class="contact-info">
             <h1>Contact Us</h1>
             <p>Reach out to us for inquiries, reservations, or suggestions.</p>
@@ -34,26 +176,30 @@
                 <p><strong>Email:</strong> contact@whitewaterrafting.com</p>
             </address>
             <div class="map-container">
-                <iframe src="https://www.google.com/maps/embed?..." width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3151.835434509198!2d144.9537353153163!3d-37.81627997975157!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad642af0f11b1b3%3A0x5045675218ceed0!2sWhitewater%20Rafting%20Adventures!5e0!3m2!1sen!2sau!4v1616161616161!5m2!1sen!2sau" allowfullscreen="" loading="lazy"></iframe>
             </div>
         </section>
+
+        <!-- Team Section -->
         <section class="team">
             <h2>Meet Our Team</h2>
             <div class="employee-profiles">
                 <figure>
-                    <img src="images/clemence(1).webp" alt="Clemence(1) - Guide">
+                    <img src="images/clemence(1).webp" alt="Clemence - Head Guide">
                     <figcaption>Clemence - Head Guide</figcaption>
                 </figure>
                 <figure>
-                    <img src="images/tari(1).jpg" alt="tari(1) - Manager">
+                    <img src="images/tari(1).jpg" alt="Tari - Operations Manager">
                     <figcaption>Tari - Operations Manager</figcaption>
                 </figure>
                 <figure>
-                    <img src="images/rose(1).jpg" alt="rose(1) - Customer Service">
+                    <img src="images/rose(1).jpg" alt="Rose - Customer Service">
                     <figcaption>Rose - Customer Service</figcaption>
                 </figure>
             </div>
         </section>
+
+        <!-- Contact Form Section -->
         <section class="contact-form">
             <h2>Send Us a Message</h2>
             <form action="submit_form.php" method="post">
@@ -79,6 +225,7 @@
             </form>
         </section>
     </main>
+
     <footer>
         <p>&copy; 2023 Whitewater Rafting Adventures - All Rights Reserved</p>
         <div class="social-icons">

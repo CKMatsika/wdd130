@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trips - Whitewater Rafting</title>
+    <meta name="description" content="Explore our exciting rafting trips and adventures. Find detailed descriptions and packages for your next adventure.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700;900&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        /* Base Styles */
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+        }
+
+        /* Header Styles */
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 20px;
+            background-color: white;
+            border-bottom: 1px solid #ccc;
+        }
+        .logo {
+            max-width: 70px;
+        }
+        nav {
+            margin-left: auto;
+        }
+        nav a {
+            margin: 0 15px;
+            text-decoration: none;
+            color: #003366;
+            font-weight: bold;
+        }
+
+        /* Main Content Styles */
+        main {
+            padding: 20px;
+        }
+
+        /* Call to Action */
+        .cta {
+            background-color: #ff6b6b;
+            color: white;
+            padding: 15px;
+            text-align: center;
+            margin-bottom: 40px;
+            border-radius: 5px;
+        }
+        .cta a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        /* Trip Descriptions */
+        .trip {
+            display: flex;
+            align-items: center;
+            margin-bottom: 40px;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            overflow: hidden;
+        }
+        .trip img {
+            width: 300px;
+            height: 200px;
+            object-fit: cover;
+        }
+        .trip-content {
+            padding: 20px;
+        }
+        .trip-content h2 {
+            color: #003366;
+            margin-bottom: 10px;
+        }
+        .trip-content p {
+            margin-bottom: 10px;
+        }
+
+        /* Trips Table */
+        .trips-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 40px;
+        }
+        .trips-table th, .trips-table td {
+            border: 1px solid #ccc;
+            padding: 10px;
+            text-align: left;
+        }
+        .trips-table th {
+            background-color: #f4f4f4;
+        }
+
+        /* Footer Styles */
+        footer {
+            background-color: #003366;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        .social-icons {
+            margin-top: 20px;
+        }
+        .social-icons a {
+            margin: 0 10px;
+        }
+        .social-icons img {
+            width: 30px;
+            height: 30px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="images/logo.png" alt="Whitewater Rafting Logo" class="logo" onerror="this.onerror=null;this.src='images/Logo.png';">
+        <nav aria-label="Main Navigation">
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="trips.html">Trips</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Call to Action -->
+        <div class="cta">
+            <p>Ready for an adventure? <a href="contact.html">Contact us</a> to book your trip today!</p>
+        </div>
+
+        <!-- Trip Descriptions -->
+        <div class="trip">
+            <img src="images/exciting.png" alt="Exciting Rapids">
+            <div class="trip-content">
+                <h2>Exciting Rapids Adventure</h2>
+                <p>Experience the thrill of navigating through the most exciting rapids. Perfect for adrenaline junkies!</p>
+            </div>
+        </div>
+
+        <div class="trip">
+            <img src="images/scenic.png" alt="Scenic River Float">
+            <div class="trip-content">
+                <h2>Scenic River Float</h2>
+                <p>Enjoy a relaxing day on the river with beautiful scenery and wildlife. Ideal for families and beginners.</p>
+            </div>
+        </div>
+
+        <div class="trip">
+            <img src="images/expedition.png" alt="Expedition Trip">
+            <div class="trip-content">
+                <h2>Expedition Trip</h2>
+                <p>Join us for a multi-day expedition trip, where you'll camp under the stars and experience nature like never before.</p>
+            </div>
+        </div>
+
+        <!-- Trips Table -->
+        <h2>Available Trips</h2>
+        <table class="trips-table">
+            <thead>
+                <tr>
+                    <th>Trip Name</th>
+                    <th>Duration</th>
+                    <th>Difficulty</th>
+                    <th>Price</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Exciting Rapids Adventure</td>
+                    <td>Half Day</td>
+                    <td>Intermediate</td>
+                    <td>$75</td>
+                </tr>
+                <tr>
+                    <td>Scenic River Float</td>
+                    <td>Full Day</td>
+                    <td>Beginner</td>
+                    <td>$100</td>
+                </tr>
+                <tr>
+                    <td>Expedition Trip</td>
+                    <td>3 Days</td>
+                    <td>Advanced</td>
+                    <td>$300</td>
+                </tr>
+            </tbody>
+        </table>
+    </main>
+
+    <footer>
+        <p>&copy; 2023 Whitewater Rafting Adventures - All Rights Reserved</p>
+        <div class="social-icons">
+            <a href="#" aria-label="Facebook"><img src="images/Facebook.webp" alt="Facebook" onerror="this.onerror=null;this.src='images/Facebook.png';"></a>
+            <a href="#" aria-label="Twitter"><img src="images/Twitter.webp" alt="Twitter" onerror="this.onerror=null;this.src='images/Twitter.png';"></a>
+            <a href="#" aria-label="Instagram"><img src="images/Instagram.webp" alt="Instagram" onerror="this.onerror=null;this.src='images/Instagram.png';"></a>
+        </div>
+        <p><a href="wireframe_trips.png">View Trips Page Wireframe</a></p>
+    </footer>
+</body>
+</html>
